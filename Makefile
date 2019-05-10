@@ -1,5 +1,11 @@
+.PHONY: clean all 
+CFLAGS = -std=c11
+
+
+all: hello
+
 hello: hello.c
-	gcc hello.c -o hello 
+	gcc $(CFLAGS) hello.c -o hello 
 
 clean:
 
