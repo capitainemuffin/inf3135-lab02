@@ -1,8 +1,19 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-int racineCarreEntiere(int x){
+
+
+void ligneCommande(int tailleTableau, char *tableau){
+
+	printf("%d", tailleTableau);
+
+	
+
+}
+
+double racineCarreEntiere(int x){
 
 	return sqrt(x);
 
@@ -31,13 +42,16 @@ void boucleApres(int x){
 
 
 
-void main (int argc, char * argv[]){
+int main (int argc, char * argv[]){
 
 
 	int x = atoi(argv[1]);
 	//boucleAvant(x);
 	//boucleApres(x);
 
-	printf("%f", racineCarreEntiere(x));
+	//printf("%d", (int)racineCarreEntiere(x));
 
+	ligneCommande(argc, argv);
+
+	return 0;
 }
